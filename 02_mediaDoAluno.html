@@ -8,21 +8,16 @@
 
     //ENTRADA
     const quantas = Number(prompt(`Quantas notas seu aluno obteve??`).trim());
-    let notas = [];
+    let notas = 0;
 
     //PROCESSAMENTO
 
-    for (let index = 0; index < array.length; index++) {
-        const nota = array[index];
-        
-    }
-
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        
+    for (let index = 1; index <= quantas; index++) {
+        const nota = Number(prompt(`Qual a nota???`).replace("," , "."));
+        notas = notas + nota
     }
 
     //SAÍDA
-    alert(`${}`);
+    alert(`A media foi ${(notas / quantas).toFixed(1).replace("." , ",")}`);
 
 </script>
