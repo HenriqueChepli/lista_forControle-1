@@ -6,11 +6,26 @@
     */
 
     //ENTRADA
-
+    const num = Number(prompt(`Informe um numero`));
+    const num1 = Number(prompt(`Informe outro numero`));
+    let par = [];
+    let impar = [];
     
     //PROCESSAMENTO
+    if (num >= num1){
+        alert(`Informe um numero maior para o Numero Final`)
+    }
 
+    for (let index = num; index <= num1; index++) {
+        if (index % 2 == 0){
+            par.push(index)
+        }
+        else{
+            impar.push(index)
+        }
+    }
     
     //SAÍDA
+    alert(`Numeros Pares: ${par} Numeros Impares: ${impar}`)
 
 </script>

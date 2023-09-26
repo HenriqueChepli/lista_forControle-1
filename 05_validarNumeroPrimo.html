@@ -6,10 +6,19 @@
     */
 
     //ENTRADA
-    
+    const numero = Number(prompt(`Informe um numero`));
+    let primo = [];
 
     //PROCESSAMENTO
-
+    for (let index = 2; index <= numero; index++) {
+        primo.push(numero % index);
+    }
+    if (primo.includes(0) === false){
+        alert(`É Primo`);
+    }
+    else{
+        alert(`Não é Primo`);
+    }
 
     //SAÍDA
 
