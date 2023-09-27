@@ -5,9 +5,19 @@
     Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
     */
 
-    //ENTRADA
+    let hab = 50000
 
-    
+    //ENTRADA
+    for (let index = 0; index <= 9; index++) {
+        hab = hab * 1.015
+        if(index == 4){
+            alert(`A população prevista em 5 anos, será ${Math.round(hab)} habitantes`);
+        }
+        else if(index == 9){
+            alert(`A população prevista em 10 anos, será ${Math.round(hab)} habitantes`);
+        }
+    }
+
     //PROCESSAMENTO
     
 
